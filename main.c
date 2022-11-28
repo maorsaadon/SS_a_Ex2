@@ -4,27 +4,33 @@
 
 int main()
 {
-    char func = 0;
-    int i = 0;
-    int j = 0;
-    scanf("%c", &func);
-    while(func != 'D')
+    char func;
+    int i,j ;
+
+    if(scanf("%c", &func)!=EOF)
     {
-        if(func == 'A')
+        while(func != 'D')
         {
-            A();
+            if(func == 'A')
+            {
+                A();
+            }
+            if(func == 'B')
+            {
+                scanf("%d %d", &i, &j);
+                B(i,j);
+            }
+            if(func == 'C')
+            {
+                scanf("%d %d", &i, &j);
+                C(i,j);
+            }
+            if(scanf("%c", &func)==EOF)
+            {
+                break;
+            }
         }
-        if(func == 'B')
-        {
-            scanf("%d %d", &i, &j);
-            B(i,j);
-        }
-        if(func == 'C')
-        {
-            scanf("%d %d", &i, &j);
-            C(i,j);
-        }
-        scanf("%c", &func);
     }
+
     return 0;
 }
