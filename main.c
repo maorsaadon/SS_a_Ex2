@@ -17,13 +17,15 @@ int main()
             }
             if(func == 'B')
             {
-                scanf("%d %d", &i, &j);
-                B(i,j);
+                if(scanf("%d %d", &i, &j)!=EOF){
+                     B(i,j);
+                }
             }
             if(func == 'C')
             {
-                scanf("%d %d", &i, &j);
-                C(i,j);
+                if(scanf("%d %d", &i, &j)!=EOF){
+                     C(i,j);
+                }
             }
             if(scanf("%c", &func)==EOF)
             {
