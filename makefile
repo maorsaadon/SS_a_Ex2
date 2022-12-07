@@ -3,7 +3,7 @@ CFLAGS = -Wall -g
 CLIBSA = ar rcs
 
 
-all: connections 
+all: connections libmy_mat.a
 
 .PHONY : clean
 clean:

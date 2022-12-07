@@ -2,7 +2,7 @@
 #include "my_mat.h"
 #define size 10
 
-int mat [10][10];
+int mat [size][size];
 
 int min(int a, int b)
 {
@@ -58,7 +58,7 @@ void A()
 {
     for(int i = 0; i < size; i++)
     {
-        for(int j = 0; j < 10; j++)
+        for(int j = 0; j < size; j++)
         {
             scanf("%d", &mat[i][j]);
         }
